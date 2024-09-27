@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UFT-8">
+<meta name="viewport" content="width=device-width" ,initial-scale="1.0">
+<title>Contact Page</title>
+<link rel="stylesheet" href="../CSSStyle/styles2.css">
+</head>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+<main>
+ <!-- First Contact Form -->
+ <form id="form1" onsubmit="return validateEmail('email1')">
+    <h2>General Inquiry</h2>
+    
+    <label for="name1">Name:</label>
+    <input type="text" id="name1" name="name1"  placeholder="Full Name" required>
+    
+    <label for="email1">Email:</label>
+    <input type="email" id="email1" name="email1" placeholder="Email" required title="Enter a valid email">
+
+    <!-- Dropdown menu -->
+    <label for="inquiry-type">Inquiry Type:</label>
+    <select id="inquiry-type" name="inquiry-type" required>
+        <option value="" disabled selected>Select inquiry type</option>
+        <option value="general">General Inquiry</option>
+        <option value="technical">Technical Support</option>
+        <option value="billing">Billing</option>
+    </select>
+    
+    <label for="message1">Message:</label>
+    <textarea id="message1" name="message1" required></textarea>
+
+    <button type="submit">Submit</button>
+</form>
+
+
+<!-- Second Contact Form -->
+<form id="form2" onsubmit="return validateEmail('email2')">
+    <h2>Feedback</h2>
+
+    <label for="name2">Name:</label>
+    <input type="text" id="name2" name="name2"  placeholder="Full Name" required />
+    <div class="error-message" id="nameError">Please enter your full name.</div>
+
+    <label for="email2">Email:</label>
+    <input type="email" id="email2" name="email2" placeholder="email" required
+    title="Enter a valid email">
+<div class="error-message" id="emailError">Please enter a valid email address.</div>
+
+    <label for="feedback">Feedback:</label>
+    <textarea id="feedback" name="feedback" required></textarea>
+
+    <button type="submit">Submit</button>
+
+</form>
+<!-- Rotating Box -->
+
+</main>
+<script src="../JavaScriptfile/script.js"></script>
+</body>
+
+
+
+
+
+</html>
